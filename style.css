@@ -1,0 +1,244 @@
+/* ===== General Page Setup ===== */
+html {
+	scroll-behavior: smooth;
+}
+/* Prevent section titles from being hidden behind the fixed navbar */
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 80px; /* equal to or slightly larger than your navbar height */
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f8f9fa;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+	background-color: #008080;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	gap: 30px;
+}
+
+.navbar li {
+	display: inline;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 8px 12px;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+	background-color: #006666;
+}
+
+/* Add space below fixed navbar */
+header {
+	margin-top: 70px; /* Adjusted for fixed navbar */
+	background-color: #e0f2f2;
+	text-align: center;
+	padding: 30px 15px;
+	border-bottom: 2px solid #b2dfdf;
+}
+
+/* ===== Header Section ===== */
+header h1 {
+	color: #008080;
+	font-size: 2.2em;
+	margin-bottom: 5px;
+}
+
+header p {
+	margin: 5px 0;
+	font-size: 1em;
+}
+
+header img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin-top: 15px;
+	border: 3px solid #008080;
+}
+
+/* ===== Section Headings ===== */
+h2 {
+	color: #006666;
+	border-bottom: 2px solid #b2dfdf;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	width: 90%;
+	margin: 20px auto 10px;
+}
+
+/* ===== Summary Section ===== */
+#summary {
+	background-color: #ffffff;
+	border-left: 5px solid #008080;
+	padding: 15px 20px;
+	width: 85%;
+	margin: 20px auto;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Education Section ===== */
+#education {
+	width: 90%;
+	margin: 20px auto;
+}
+
+#education table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#education th {
+	background-color: #008080;
+	color: white;
+	padding: 10px;
+	text-align: left;
+}
+
+#education td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+#education tr:hover {
+	background-color: #f1f1f1;
+}
+
+/* ===== Academic Project ===== */
+#project {
+	width: 85%;
+	margin: 20px auto;
+	background-color: #ffffff;
+	padding: 15px;
+	border-left: 5px solid #008080;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Skills Section ===== */
+#skills {
+	width: 90%;
+	margin: 20px auto;
+}
+
+#skills table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#skills th {
+	background-color: #008080;
+	color: white;
+	padding: 10px;
+	text-align: left;
+}
+
+#skills td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+/* ===== Hobbies Section ===== */
+#hobbies {
+	width: 85%;
+	margin: 20px auto;
+	padding: 15px;
+	background-color: #ffffff;
+	border-left: 5px solid #006666;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Contact Section ===== */
+#contact {
+	width: 85%;
+	margin: 20px auto;
+	padding: 15px;
+	background-color: #ffffff;
+	border-left: 5px solid #008080;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Main Layout ===== */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+/* ===== Footer Section ===== */
+footer {
+	text-align: center;
+	background-color: #e9ecef;
+	padding: 15px;
+	font-size: 0.9em;
+	color: #555;
+	margin-top: 30px;
+	border-top: 2px solid #b2dfdf;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+	header img {
+		width: 120px;
+		height: 120px;
+	}
+
+	h2 {
+		width: 95%;
+		font-size: 1.2em;
+	}
+
+	#summary,
+	#project,
+	#hobbies,
+	#contact {
+		width: 90%;
+		padding: 10px;
+	}
+
+	#education table,
+	#skills table {
+		width: 100%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	body {
+		font-size: 0.95em;
+	}
+}
